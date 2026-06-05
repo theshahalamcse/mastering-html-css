@@ -5,7 +5,7 @@ function loadMenu(type) {
 
   // Get sidebar element
   let sidebar = document.getElementById("sidebar");
-  const viewBase = window.location.pathname.includes("/docs/") ? "../src/views/" : "src/views/";
+  const viewBase = "../src/views/";
 
   // If user clicks HTML button
   if (type === "html") {

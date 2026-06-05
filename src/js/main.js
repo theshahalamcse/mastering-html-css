@@ -18,6 +18,7 @@ function loadMenu(type) {
       <a href="${viewBase}about.html" onclick="event.preventDefault(); loadPage('${viewBase}about.html');">HTML Intro</a>
       <a href="${viewBase}html-tags.html" onclick="event.preventDefault(); loadPage('${viewBase}html-tags.html');">HTML Tags</a>
       <a href="${viewBase}html-div.html" onclick="event.preventDefault(); loadPage('${viewBase}html-div.html');">HTML Div</a>
+      <a href="${viewBase}test.html" onclick="event.preventDefault(); loadPage('${viewBase}test.html');">HTML Test</a>
     `;
 
   }
@@ -40,29 +41,12 @@ function loadMenu(type) {
 // This function loads different HTML files inside content area
 
 function loadPage(page) {
-
-  // Get content area
-  let content = document.getElementById("content");
-
-  if (pageContentMap[page]) {
-    content.innerHTML = pageContentMap[page];
-    return;
-  }
-
-  // Load external file inside content div
-  fetch(page)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Failed to load page: " + response.status);
-      }
-      return response.text();
-    })
-    .then(data => {
-      content.innerHTML = data;
-    })
-    .catch(error => {
-      console.error(error);
-      content.innerHTML = "<p>Unable to load the selected page.</p>";
-    });
-
+  const content = document.getElementById("content");
+  content.innerHTML = `
+    <div class="content-card">
+      <h2>Preview</h2>
+      <p>This panel shows the selected HTML page from the sidebar.</p>
+      <iframe src="${page}" title="Page preview"></iframe>
+    </div>
+  `;
 }

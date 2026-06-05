@@ -1,11 +1,3 @@
-const pageContentMap = {
-  'views/about.html': '<h2>HTML Introduction</h2><p>HTML stands for HyperText Markup Language. It is used to create web pages.</p>',
-  'views/html-tags.html': '<h2>HTML Tags</h2><p>HTML tags define the structure of a webpage. Common examples include headings, paragraphs, links, images, and lists.</p>',
-  'views/html-div.html': '<h2>HTML Div</h2><p>The div element is a container used to group content and apply layout or styling with CSS.</p>',
-  'views/css-intro.html': '<h2>CSS Introduction</h2><p>CSS controls the presentation of HTML pages, including colors, fonts, spacing, and layout.</p>',
-  'views/css-selectors.html': '<h2>CSS Selectors</h2><p>CSS selectors target HTML elements so you can style specific parts of your page.</p>'
-};
-
 // ================= MENU FUNCTION =================
 // This function controls sidebar menu (HTML or CSS)
 
@@ -24,6 +16,8 @@ function loadMenu(type) {
       <a href="${viewBase}about.html" onclick="event.preventDefault(); loadPage('${viewBase}about.html');">HTML Intro</a>
       <a href="${viewBase}html-tags.html" onclick="event.preventDefault(); loadPage('${viewBase}html-tags.html');">HTML Tags</a>
       <a href="${viewBase}html-div.html" onclick="event.preventDefault(); loadPage('${viewBase}html-div.html');">HTML Div</a>
+      <a href="${viewBase}test.html" onclick="event.preventDefault(); loadPage('${viewBase}test.html');">HTML Test</a>
+      <a href="${viewBase}test2.html" onclick="event.preventDefault(); loadPage('${viewBase}test2.html');">HTML Test2</a>
     `;
 
   }
@@ -46,29 +40,12 @@ function loadMenu(type) {
 // This function loads different HTML files inside content area
 
 function loadPage(page) {
-
-  // Get content area
-  let content = document.getElementById("content");
-
-  if (pageContentMap[page]) {
-    content.innerHTML = pageContentMap[page];
-    return;
-  }
-
-  // Load external file inside content div
-  fetch(page)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Failed to load page: " + response.status);
-      }
-      return response.text();
-    })
-    .then(data => {
-      content.innerHTML = data;
-    })
-    .catch(error => {
-      console.error(error);
-      content.innerHTML = "<p>Unable to load the selected page.</p>";
-    });
-
+  const content = document.getElementById("content");
+  content.innerHTML = `
+    <div class="content-card">
+      <h2>Preview</h2>
+      <p>This panel shows the selected HTML page from the sidebar.</p>
+      <iframe src="${page}" title="Page preview"></iframe>
+    </div>
+  `;
 }

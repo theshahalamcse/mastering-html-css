@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learning Website</title>
+
+  <!-- Link CSS file -->
+  <link rel="stylesheet" href="../src/css/main.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<!-- Top navigation bar -->
+<div class="navbar">
+
+  <!-- When clicked, JavaScript will load HTML sidebar -->
+  <button onclick="loadMenu('html')">HTML</button>
+
+  <!-- When clicked, JavaScript will load CSS sidebar -->
+  <button onclick="loadMenu('css')">CSS</button>
+
+</div>
+
+
+<!-- ================= MAIN LAYOUT ================= -->
+<div class="container">
+
+  <!-- ========== SIDEBAR (LEFT SIDE MENU) ========== -->
+  <div class="sidebar" id="sidebar">
+
+    <!-- Sidebar menu will be loaded dynamically -->
+    <!-- Example: HTML intro, tags, div etc -->
+
+  </div>
+
+
+  <!-- ========== CONTENT AREA (RIGHT SIDE) ========== -->
+  <div class="content" id="content">
+
+    <!-- Default page content -->
+    <h2>Welcome</h2>
+    <p>Select HTML or CSS from navbar to start learning.</p>
+
+  </div>
+
+</div>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+<script src="../src/js/main.js"></script>
+
+</body>
+</html>

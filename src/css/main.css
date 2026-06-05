@@ -1,0 +1,59 @@
+/* ================= BODY STYLE ================= */
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  background: #333;
+  padding: 10px;
+}
+
+/* Navbar buttons */
+.navbar button {
+  color: white;
+  background: #444;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.navbar button:hover {
+  background: #666;
+}
+
+/* ================= MAIN CONTAINER ================= */
+.container {
+  display: flex; /* sidebar + content side by side */
+  height: 100vh;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+  width: 200px;
+  background: #f4f4f4;
+  padding: 10px;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 5px;
+}
+
+/* Hover effect */
+.sidebar a:hover {
+  background: #ddd;
+}
+
+/* ================= CONTENT AREA ================= */
+.content {
+  flex: 1;
+  padding: 20px;
+}

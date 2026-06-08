@@ -13,7 +13,9 @@ function loadMenu(type) {
     sidebar.innerHTML = `
       <h3>HTML Topics</h3>
 
-      <a href="${viewBase}about.html" onclick="event.preventDefault(); loadPage('${viewBase}about.html');">HTML Intro</a>
+      <a href="${viewBase}about.html" onclick="event.preventDefault(); loadPage('${viewBase}html.about.html');">HTML Intro</a>
+      <a href="${viewBase}html-html-editor.html" onclick="event.preventDefault(); loadPage('${viewBase}html-html-editor.html');">HTML Editor</a>
+      <a href="${viewBase}html-basic.html" onclick="event.preventDefault(); loadPage('${viewBase}html-basic.html');">HTML Basic</a>
       <a href="${viewBase}html-tags.html" onclick="event.preventDefault(); loadPage('${viewBase}html-tags.html');">HTML Tags</a>
       <a href="${viewBase}html-div.html" onclick="event.preventDefault(); loadPage('${viewBase}html-div.html');">HTML Div</a>
       <a href="${viewBase}test.html" onclick="event.preventDefault(); loadPage('${viewBase}test.html');">HTML Test</a>

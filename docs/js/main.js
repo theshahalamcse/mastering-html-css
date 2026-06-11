@@ -29,7 +29,7 @@ function loadMenu(type) {
       <a href="${viewBase}html-list.html" onclick="event.preventDefault(); loadPage('${viewBase}16-html-title.html');">HTML Title</a>
       <a href="${viewBase}html-list.html" onclick="event.preventDefault(); loadPage('${viewBase}17-html-table.html');">HTML Table</a>
       <a href="${viewBase}html-list.html" onclick="event.preventDefault(); loadPage('${viewBase}18-html-list.html');">HTML List</a>
-      <a href="${viewBase}html-list.html" onclick="event.preventDefault(); loadPage('${viewBase}19-html-block-inline.html');">HTML Block and Inline Elements</a>
+      <a href="${viewBase}19-html-block-inline.html" onclick="event.preventDefault(); loadPage('${viewBase}19-html-block-inline.html');">HTML Block and Inline Elements</a>
       <a href="${viewBase}html-list.html" onclick="event.preventDefault(); loadPage('${viewBase}20-html-div.html');">HTML Div</a>
       <a href="${viewBase}html-class.html" onclick="event.preventDefault(); loadPage('${viewBase}21-html-class.html');">HTML Class</a>
     `;

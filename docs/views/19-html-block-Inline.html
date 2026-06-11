@@ -1,80 +1,74 @@
-<!--About Html Block and Inline Elements details and examples-->
+<!--About html block and Inline Elements details and examples-->
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Block and Inline Elements</title>
     <style>
+      /* Basic styling for the page */
       body {
         font-family: Arial, sans-serif;
         margin: 20px;
+        line-height: 1.6;
       }
-      h1 {
+      h1,
+      h2 {
         color: #333;
       }
-      h2 {
-        color: #555;
-      }
-      pre {
+      code {
         background-color: #f4f4f4;
-        padding: 10px;
-        border-radius: 5px;
-        overflow-x: auto;
+        padding: 2px 4px;
+        border-radius: 4px;
       }
       ul {
-        list-style-type: disc;
+        list-style-type: square;
         margin-left: 20px;
-      }
-      ul li {
-        margin-bottom: 5px;
       }
     </style>
   </head>
-
   <body>
     <h1>HTML Block and Inline Elements</h1>
     <p>
       In HTML, elements are categorized into two main types: block-level
       elements and inline elements. Understanding the difference between these
-      two types of elements is crucial for structuring your web page correctly.
+      two types of elements is crucial for structuring and styling your web
+      pages effectively.
     </p>
 
     <h2>Block-Level Elements</h2>
     <p>
       Block-level elements are those that start on a new line and take up the
-      full width available. They create a "block" of content. Common block-level
-      elements include:
+      full width available. They create a "block" of content on the page. Common
+      block-level elements include:
     </p>
     <ul>
-      <li>&lt;div&gt;</li>
-      <li>&lt;h1&gt; to &lt;h6&gt;</li>
-      <li>&lt;p&gt;</li>
-      <li>&lt;ul&gt; and &lt;ol&gt;</li>
-      <li>&lt;table&gt;</li>
+      <li><code>&lt;div&gt;</code></li>
+      <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code></li>
+      <li><code>&lt;p&gt;</code></li>
+      <li><code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code></li>
+      <li><code>&lt;table&gt;</code></li>
     </ul>
 
     <h2>Inline Elements</h2>
     <p>
       Inline elements, on the other hand, do not start on a new line and only
       take up as much width as necessary. They are typically used for formatting
-      text within block-level elements. Common inline elements include:
+      text or grouping small pieces of content within a block-level element.
+      Common inline elements include:
     </p>
     <ul>
-      <li>&lt;span&gt;</li>
-      <li>&lt;a&gt;</li>
-      <li>&lt;strong&gt;</li>
-      <li>&lt;em&gt;</li>
-      <li>&lt;img&gt;</li>
+      <li><code>&lt;span&gt;</code></li>
+      <li><code>&lt;a&gt;</code></li>
+      <li><code>&lt;strong&gt;</code></li>
+      <li><code>&lt;em&gt;</code></li>
+      <li><code>&lt;img&gt;</code></li>
     </ul>
 
-    <p>Example:</p>
-    <pre><code>&lt;div&gt;
-    &lt;h1&gt;This is a heading&lt;/h1&gt;
-    &lt;p&gt;This is a paragraph with an &lt;em&gt;inline element&lt;/em&gt;.&lt;/p&gt;
-&lt;/div&gt;</code></pre>
     <p>
-      In this example, the &lt;div&gt; and &lt;h1&gt; are block-level elements,
-      while the &lt;em&gt; is an inline element.
+      When structuring your HTML, it's important to use block-level elements to
+      create the overall layout of your page, while inline elements can be used
+      to style and format specific parts of your content within those blocks.
     </p>
   </body>
 </html>

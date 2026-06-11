@@ -24,14 +24,14 @@ function loadMenu(type) {
       <a href="${viewBase}html-color.html" onclick="event.preventDefault(); loadPage('${viewBase}11-html-color.html');">HTML Color</a>
       <a href="${viewBase}html-css.html" onclick="event.preventDefault(); loadPage('${viewBase}12-html-css.html');">HTML CSS</a>
       <a href="${viewBase}html-link.html" onclick="event.preventDefault(); loadPage('${viewBase}13-html-link.html');">HTML Link</a>
-      <a href="${viewBase}html-list.html" onclick="event.preventDefault(); loadPage('${viewBase}14-html-image.html');">HTML Image</a>
-      <a href="${viewBase}html-list.html" onclick="event.preventDefault(); loadPage('${viewBase}15-html-favicon.html');">HTML Favicon</a>
-      <a href="${viewBase}html-list.html" onclick="event.preventDefault(); loadPage('${viewBase}16-html-title.html');">HTML Title</a>
-      <a href="${viewBase}html-list.html" onclick="event.preventDefault(); loadPage('${viewBase}17-html-table.html');">HTML Table</a>
-      <a href="${viewBase}html-list.html" onclick="event.preventDefault(); loadPage('${viewBase}18-html-list.html');">HTML List</a>
+      <a href="${viewBase}14-html-image.html" onclick="event.preventDefault(); loadPage('${viewBase}14-html-image.html');">HTML Image</a>
+      <a href="${viewBase}15-html-favicon.html'" onclick="event.preventDefault(); loadPage('${viewBase}15-html-favicon.html');">HTML Favicon</a>
+      <a href="${viewBase}16-html-title.html" onclick="event.preventDefault(); loadPage('${viewBase}16-html-title.html');">HTML Title</a>
+      <a href="${viewBase}17-html-table.html" onclick="event.preventDefault(); loadPage('${viewBase}17-html-table.html');">HTML Table</a>
+      <a href="${viewBase}18-html-list.html" onclick="event.preventDefault(); loadPage('${viewBase}18-html-list.html');">HTML List</a>
       <a href="${viewBase}19-html-block.html" onclick="event.preventDefault(); loadPage('${viewBase}19-html-block.html');">HTML Block and Inline Elements</a>
-      <a href="${viewBase}html-list.html" onclick="event.preventDefault(); loadPage('${viewBase}20-html-div.html');">HTML Div</a>
-      <a href="${viewBase}html-class.html" onclick="event.preventDefault(); loadPage('${viewBase}21-html-class.html');">HTML Class</a>
+      <a href="${viewBase}20-html-div.html" onclick="event.preventDefault(); loadPage('${viewBase}20-html-div.html');">HTML Div</a>
+      <a href="${viewBase}21-html-class.html" onclick="event.preventDefault(); loadPage('${viewBase}21-html-class.html');">HTML Class</a>
     `;
   }
 

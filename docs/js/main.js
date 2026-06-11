@@ -20,7 +20,18 @@ function loadMenu(type) {
       <a href="${viewBase}html-style.html" onclick="event.preventDefault(); loadPage('${viewBase}7-html-style.html');">HTML Style</a>
       <a href="${viewBase}html-text-formatting.html" onclick="event.preventDefault(); loadPage('${viewBase}8-html-text-formatting.html');">HTML Text Formatting</a>
       <a href="${viewBase}html-quotations.html" onclick="event.preventDefault(); loadPage('${viewBase}9-html-quotations.html');">HTML Quotations</a>
-
+      <a href="${viewBase}html-comments.html" onclick="event.preventDefault(); loadPage('${viewBase}10-html-comments.html');">HTML Comments</a>
+      <a href="${viewBase}html-color.html" onclick="event.preventDefault(); loadPage('${viewBase}11-html-color.html');">HTML Color</a>
+      <a href="${viewBase}html-css.html" onclick="event.preventDefault(); loadPage('${viewBase}12-html-css.html');">HTML CSS</a>
+      <a href="${viewBase}html-link.html" onclick="event.preventDefault(); loadPage('${viewBase}13-html-link.html');">HTML Link</a>
+      <a href="${viewBase}html-list.html" onclick="event.preventDefault(); loadPage('${viewBase}14-html-image.html');">HTML Image</a>
+      <a href="${viewBase}html-list.html" onclick="event.preventDefault(); loadPage('${viewBase}15-html-favicon.html');">HTML Favicon</a>
+      <a href="${viewBase}html-list.html" onclick="event.preventDefault(); loadPage('${viewBase}16-html-title.html');">HTML Title</a>
+      <a href="${viewBase}html-list.html" onclick="event.preventDefault(); loadPage('${viewBase}17-html-table.html');">HTML Table</a>
+      <a href="${viewBase}html-list.html" onclick="event.preventDefault(); loadPage('${viewBase}18-html-list.html');">HTML List</a>
+      <a href="${viewBase}html-list.html" onclick="event.preventDefault(); loadPage('${viewBase}19-html-block-inline.html');">HTML Block and Inline Elements</a>
+      <a href="${viewBase}html-list.html" onclick="event.preventDefault(); loadPage('${viewBase}20-html-div.html');">HTML Div</a>
+      <a href="${viewBase}html-class.html" onclick="event.preventDefault(); loadPage('${viewBase}21-html-class.html');">HTML Class</a>
     `;
   }
 

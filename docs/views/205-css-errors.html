@@ -1,0 +1,221 @@
+<!--About css errors explanation and examples-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Errors</title>
+    <style>
+      /* Basic styling for the content */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      pre {
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-left: 5px solid #ccc;
+        overflow-x: auto;
+      }
+
+      code {
+        font-family: "Courier New", Courier, monospace;
+        background-color: #eaeaea;
+        padding: 2px 4px;
+        border-radius: 3px;
+      }
+      .error {
+        color: red;
+        font-weight: bold;
+      }
+      .warning {
+        color: orange;
+        font-weight: bold;
+      }
+      .info {
+        color: blue;
+        font-weight: bold;
+      }
+      .code-block {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .code-block pre {
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+      }
+      .code-block code {
+        background-color: transparent;
+        padding: 0;
+        border: none;
+      }
+      .error-message {
+        background-color: #ffe6e6;
+        border-left: 5px solid #ff4d4d;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+      .error-message h3 {
+        margin-top: 0;
+        color: #ff4d4d;
+      }
+      .error-message p {
+        margin: 0;
+      }
+      .warning-message {
+        background-color: #fff4e6;
+        border-left: 5px solid #ffcc00;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+      .warning-message h3 {
+        margin-top: 0;
+        color: #ffcc00;
+      }
+      .warning-message p {
+        margin: 0;
+      }
+      .info-message {
+        background-color: #e6f0ff;
+        border-left: 5px solid #4d79ff;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+      .info-message h3 {
+        margin-top: 0;
+        color: #4d79ff;
+      }
+      .info-message p {
+        margin: 0;
+      }
+      .code-example {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .code-example pre {
+        background-color: transparent;
+        padding: 0;
+        border: none;
+      }
+      .code-example code {
+        background-color: transparent;
+        padding: 0;
+        border: none;
+      }
+      .error-highlight {
+        background-color: #ffe6e6;
+        border-left: 5px solid #ff4d4d;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+      .error-highlight pre {
+        background-color: transparent;
+        padding: 0;
+        border: none;
+      }
+      .error-highlight code {
+        background-color: transparent;
+        padding: 0;
+        border: none;
+      }
+      .error-highlight .error-line {
+        background-color: #ffcccc;
+        padding: 2px 4px;
+        border-radius: 3px;
+      }
+      .error-highlight .error-line::before {
+        content: "Error: ";
+        color: #ff4d4d;
+        font-weight: bold;
+      }
+      .error-highlight .error-line::after {
+        content: " (line 3)";
+        color: #ff4d4d;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Errors</h1>
+    <p>
+      When writing CSS, you may encounter various errors that can prevent your
+      styles from being applied correctly. Here are some common CSS errors and
+      how to fix them:
+    </p>
+
+    <div class="error-message">
+      <h3>Syntax Error</h3>
+      <p>
+        A syntax error occurs when there is a mistake in the structure of your
+        CSS code, such as a missing semicolon or an unmatched curly brace.
+      </p>
+    </div>
+
+    <div class="code-example">
+      <pre><code>/* Incorrect CSS with syntax error */
+.my-class {
+    color: red;
+    font-size: 16px
+} /* Missing semicolon after font-size */
+</code></pre>
+    </div>
+
+    <p>
+      To fix this error, make sure to add a semicolon after each property
+      declaration:
+    </p>
+
+    <div class="code-example">
+      <pre><code>/* Corrected CSS */
+.my-class {
+    color: red;
+    font-size: 16px;
+}</code></pre>
+    </div>
+
+    <div class="error-message">
+      <h3>Invalid Property</h3>
+      <p>
+        An invalid property error occurs when you use a CSS property that does
+        not exist or is misspelled.
+      </p>
+    </div>
+
+    <div class="code-example">
+      <pre><code>/* Incorrect CSS with invalid property */
+.my-class {
+    color: red;
+    font-size: 16px;
+    invalid-property: value;
+}</code></pre>
+    </div>
+
+    <p>To fix this error, make sure to use valid CSS properties:</p>
+
+    <div class="code-example">
+      <pre><code>/* Corrected CSS */
+.my-class {
+    color: red;
+    font-size: 16px;
+}</code></pre>
+    </div>
+  </body>
+</html>

@@ -40,8 +40,14 @@ function loadMenu(type) {
     sidebar.innerHTML = `
       <h3>CSS Topics</h3>
 
-      <a href="${viewBase}css-intro.html" onclick="event.preventDefault(); loadPage('${viewBase}css-intro.html');">CSS Intro</a>
-      <a href="${viewBase}css-selectors.html" onclick="event.preventDefault(); loadPage('${viewBase}css-selectors.html');">CSS Selectors</a>
+      <a href="${viewBase}css-intro.html" onclick="event.preventDefault(); loadPage('${viewBase}201-css-intro.html');">CSS Intro</a>
+      <a href="${viewBase}css-syntax.html" onclick="event.preventDefault(); loadPage('${viewBase}202-css-syntax.html');">CSS Syntax</a>
+      <a href="${viewBase}css-selectors.html" onclick="event.preventDefault(); loadPage('${viewBase}203-css-selectors.html');">CSS Selectors</a>
+      <a href="${viewBase}204-css-comments.html" onclick="event.preventDefault(); loadPage('${viewBase}204-css-comments.html');">CSS Comments</a>
+      <a href="${viewBase}205-css-errors.html" onclick="event.preventDefault(); loadPage('${viewBase}205-css-errors.html');">CSS Errors</a>
+      <a href="${viewBase}206-css-color.html" onclick="event.preventDefault(); loadPage('${viewBase}206-css-color.html');">CSS Color</a>
+      <a href="${viewBase}207-css-background.html" onclick="event.preventDefault(); loadPage('${viewBase}207-css-background.html');">CSS Background</a>
+      <a href="${viewBase}208-css-border.html" onclick="event.preventDefault(); loadPage('${viewBase}208-css-border.html');">CSS Border</a>
     `;
   }
 }

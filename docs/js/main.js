@@ -54,6 +54,9 @@ function loadMenu(type) {
       <a href="${viewBase}211-css-width-height.html" onclick="event.preventDefault(); loadPage('${viewBase}211-css-width-height.html');">CSS Width and Height</a>
       <a href="${viewBase}212-css-box-model.html" onclick="event.preventDefault(); loadPage('${viewBase}212-css-box-model.html');">CSS Box Model</a>
       <a href="${viewBase}213-css-outline.html" onclick="event.preventDefault(); loadPage('${viewBase}213-css-outline.html');">CSS Outline</a>
+      <a href="${viewBase}214-css-text-format.html" onclick="event.preventDefault(); loadPage('${viewBase}214-css-text-format.html');">CSS Text</a>
+      <a href="${viewBase}215-css-fonts.html" onclick="event.preventDefault(); loadPage('${viewBase}215-css-fonts.html');">CSS Font</a>
+      <a href="${viewBase}216-css-icon.html" onclick="event.preventDefault(); loadPage('${viewBase}216-css-icon.html');">CSS Icon</a>
     `;
   }
 }

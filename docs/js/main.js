@@ -32,6 +32,7 @@ function loadMenu(type) {
       <a href="${viewBase}19-html-block.html" onclick="event.preventDefault(); loadPage('${viewBase}19-html-block.html');">HTML Block and Inline Elements</a>
       <a href="${viewBase}20-html-div.html" onclick="event.preventDefault(); loadPage('${viewBase}20-html-div.html');">HTML Div</a>
       <a href="${viewBase}21-html-class.html" onclick="event.preventDefault(); loadPage('${viewBase}21-html-class.html');">HTML Class</a>
+      
     `;
   }
 
@@ -48,6 +49,11 @@ function loadMenu(type) {
       <a href="${viewBase}206-css-color.html" onclick="event.preventDefault(); loadPage('${viewBase}206-css-color.html');">CSS Color</a>
       <a href="${viewBase}207-css-background.html" onclick="event.preventDefault(); loadPage('${viewBase}207-css-background.html');">CSS Background</a>
       <a href="${viewBase}208-css-border.html" onclick="event.preventDefault(); loadPage('${viewBase}208-css-border.html');">CSS Border</a>
+      <a href="${viewBase}209-css-margin.html" onclick="event.preventDefault(); loadPage('${viewBase}209-css-margin.html');">CSS Margin</a>
+      <a href="${viewBase}210-css-padding.html" onclick="event.preventDefault(); loadPage('${viewBase}210-css-padding.html');">CSS Padding</a>
+      <a href="${viewBase}211-css-width-height.html" onclick="event.preventDefault(); loadPage('${viewBase}211-css-width-height.html');">CSS Width and Height</a>
+      <a href="${viewBase}212-css-box-model.html" onclick="event.preventDefault(); loadPage('${viewBase}212-css-box-model.html');">CSS Box Model</a>
+      <a href="${viewBase}213-css-outline.html" onclick="event.preventDefault(); loadPage('${viewBase}213-css-outline.html');">CSS Outline</a>
     `;
   }
 }

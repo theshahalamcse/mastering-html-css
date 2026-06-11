@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      div {
+        border: 1px solid black;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 150px;
+        margin-left: 80px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Using individual margin properties</h2>
+
+    <div>
+      This div element has a top margin of 100px, a right margin of 150px, a
+      bottom margin of 100px, and a left margin of 80px.
+    </div>
+    <!--The margin property is a shorthand property for the following individual margin properties:-->
+    <ul>
+      <li>margin-top</li>
+      <li>margin-right</li>
+      <li>margin-bottom</li>
+      <li>margin-left</li>
+    </ul>
+    <!--Give examples of using the margin shorthand property-->
+    <h2>Using the margin shorthand property</h2>
+    <div
+      style="
+        margin: 100px 150px 100px 80px;
+        border: 1px solid black;
+        background-color: lightgreen;
+      "
+    >
+      This div element has the same margins as the previous example, but they
+      are set using the margin shorthand property. The values are specified in
+      the order: top, right, bottom, left.
+    </div>
+  </body>
+</html>
